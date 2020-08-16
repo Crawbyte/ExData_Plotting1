@@ -24,4 +24,4 @@ data <- read.table(dataFile,
 #Subset
 subsetData <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 
-#Next part in the rest of the files (Plot1,Plot2...)
+#Next part in the rest of the files (Plot_01,Plot_02...)
