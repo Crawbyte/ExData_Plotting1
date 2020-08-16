@@ -15,9 +15,13 @@ unzip(temp,
 
 #Read the data
 dataFile <- "household_power_consumption.txt"
-data <- read.table(dataFile, header = TRUE, sep = ";", stringsAsFactors=FALSE, dec=".")
+data <- read.table(dataFile, 
+                   header = TRUE, 
+                   sep = ";", 
+                   stringsAsFactors=FALSE, 
+                   dec=".")
 
 #Subset
 subsetData <- data[data$Date %in% c("1/2/2007","2/2/2007") ,]
 
-#Next part in the resto of the files (Plot1,Plot2...)
+#Next part in the rest of the files (Plot1,Plot2...)
